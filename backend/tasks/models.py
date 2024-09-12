@@ -1,3 +1,15 @@
 from django.db import models
 
-# Create your models here.
+class TaskList(models.Model):
+    name = models.CharField(max_length=45)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+class Item(models.Model):
+    title = models.CharField(max_length=45)
+    description = models.CharField(max_length=256)
+    completion_date = models.DateTimeField(null=True, blank=True)
+    task_list = models.ForeignKey(TaskList, on_delete=models.CASCADE, related_name='items')
+    done = models.BooleanField(default=False)
+    
+    def __str__(self):
+        return self.title
