@@ -107,6 +107,11 @@ Este projeto é uma API de lista de tarefas (Todo List) desenvolvida com Django 
 ## Formatação de Data e Hora
 Os campos de data e hora são formatados no formato `DD/MM//YY HH:MM:SS` em toda a API.
 
+## Atualizações Futuras
+- Autenticação de usuários
+- Notificações para lembrar o usuário de concluir a tarefa
+- Verificação de nomes iguais em listas
+
 ## Licença
 Este projeto é licensiado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
 
