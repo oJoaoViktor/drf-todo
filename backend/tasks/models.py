@@ -10,7 +10,7 @@ class TaskList(models.Model):
     
 class Item(models.Model):
     title = models.CharField(max_length=45)
-    description = models.CharField(max_length=256)
+    description = models.CharField(null=True, blank=True, max_length=256)
     completion_date = models.DateTimeField(null=True, blank=True)
     task_list = models.ForeignKey(TaskList, on_delete=models.CASCADE, related_name='items')
     done = models.BooleanField(default=False)

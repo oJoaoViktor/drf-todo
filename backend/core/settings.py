@@ -99,7 +99,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'pt_Br'
+LANGUAGE_CODE = 'PT-BR'
 
 TIME_ZONE = 'America/Sao_Paulo'
 
