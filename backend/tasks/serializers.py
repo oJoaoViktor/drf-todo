@@ -23,10 +23,21 @@ from .models import Item, TaskList
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
+        #Para incluir todos os campos do modelo
         fields = "__all__"
         
 class TaskListSerializer(serializers.ModelSerializer):
     items = ItemSerializer(many=True, read_only=True)
     class Meta:
         model = TaskList
-        fields = "__all__"
+        #Para incluir campos personalizados
+        fields = ["name"] #Caso utilize mais campos -> ["name","name1","name2"]
+
+"""
+Quando utilizar campos personalizados:   
+    - Se o usuário não precisa preencher
+    - Se o usuário não precisa visualizar
+    - Se o campo é criado de forma automática
+    - Se o campo não é necessário em uma listagem (Otimização)
+    - Se o campo contém um dado sensível (Ex:senha)
+"""

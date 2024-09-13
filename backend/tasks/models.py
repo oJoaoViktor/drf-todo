@@ -4,6 +4,10 @@ class TaskList(models.Model):
     name = models.CharField(max_length=45)
     created_at = models.DateTimeField(auto_now_add=True)
     
+    def __str__(self):
+        return f"Task List: {self.name}"
+    
+    
 class Item(models.Model):
     title = models.CharField(max_length=45)
     description = models.CharField(max_length=256)
@@ -12,4 +16,4 @@ class Item(models.Model):
     done = models.BooleanField(default=False)
     
     def __str__(self):
-        return self.title
+        return f"Item: {self.title}"
