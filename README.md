@@ -117,5 +117,5 @@ Este projeto é licensiado sob a Licença MIT - consulte o arquivo [LICENSE](LIC
 
 ---
 
-Este README inclui todos os tópicos, desde a configuração do ambiente até a descrição dos endpoints da API e detalhes sobre formatação de data e hora, contribuindo e licença.
+Este README inclui todos os tópicos, desde a configuração do ambiente até a descrição dos endpoints da API, atualizações futuras e licença.
 
