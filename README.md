@@ -105,7 +105,7 @@ Este projeto é uma API de lista de tarefas (Todo List) desenvolvida com Django 
   - `DELETE /api/items/{id}/`
 
 ## Formatação de Data e Hora
-Os campos de data e hora são formatados no formato `DD/MM//YY HH:MM:SS` em toda a API.
+Os campos de data e hora são formatados no formato `DD/MM/YY HH:MM:SS` em toda a API.
 
 ## Atualizações Futuras
 - Autenticação de usuários
